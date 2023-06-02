@@ -88,8 +88,10 @@ public:
 		makeStringArray(in2, in2_array);
 
 		getCount(totalCnt, sameCnt, in1_array, in2_array);
+		if (totalCnt == 0)
+			return 0;
 
-		ret = sameCnt / totalCnt * 40;
+		ret = 40 * sameCnt / totalCnt;
 
 		return ret;
 	}
