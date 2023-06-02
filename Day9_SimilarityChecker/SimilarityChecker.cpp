@@ -39,6 +39,9 @@ public:
 		if (check_size(in1, in2)) return 0;
 
 		min = getMin(in1, in2);
+		if (min == 0)
+			return 0;
+
 		if (min == in1.size())
 			gap = in2.size() - in1.size();
 		else
