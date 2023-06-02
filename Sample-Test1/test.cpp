@@ -1,7 +1,12 @@
 #include "pch.h"
 #include "../Day9_SimilarityChecker/SimilarityChecker.cpp"
 
-TEST(TestCaseName, TestName) {
-  EXPECT_EQ(1, 1);
-  EXPECT_TRUE(true);
+TEST(TestSimilarityChecker, checker1) {
+	Checker checker;
+
+	EXPECT_EQ(60, checker.lengthCharacter("ASD", "DSA"));
+	EXPECT_EQ(0, checker.lengthCharacter("A", "BB"));
+	EXPECT_EQ(20, checker.lengthCharacter("AAABB", "BAA"));
+	EXPECT_EQ(30, checker.lengthCharacter("AA", "AAA"));
+	EXPECT_EQ(40, checker.lengthCharacter("AABB", "BAA"));
 }
