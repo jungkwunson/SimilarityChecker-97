@@ -9,6 +9,7 @@ TEST(TestSimilarityChecker, checker1) {
 	EXPECT_EQ(20, checker.lengthCharacter("AAABB", "BAA"));
 	EXPECT_EQ(30, checker.lengthCharacter("AA", "AAA"));
 	EXPECT_EQ(40, checker.lengthCharacter("AABB", "BAA"));
+	EXPECT_EQ(0, checker.lengthCharacter("AABB", ""));
 }
 
 TEST(TestSimilarityChecker, checker2) {
