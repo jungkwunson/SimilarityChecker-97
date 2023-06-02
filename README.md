@@ -2,3 +2,4 @@
 -----
 SimilarityChecker
 fixed update
+check change of rule
