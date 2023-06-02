@@ -1,0 +1,3 @@
+### SimilarityChecker KATA
+-----
+SimilarityChecker
