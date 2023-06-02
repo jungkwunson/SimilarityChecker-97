@@ -4,3 +4,4 @@ SimilarityChecker
 fixed update
 check change of rule
 change branch and update 
+check repo type from private to public
