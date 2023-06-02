@@ -19,4 +19,12 @@ TEST(TestSimilarityChecker, checker2) {
 	EXPECT_EQ(40, checker.sameCharacter("AAABB", "BA"));
 	EXPECT_EQ(20, checker.sameCharacter("AA", "AAE"));
 	EXPECT_EQ(40, checker.sameCharacter("AABB", "BAA"));
+
+	EXPECT_EQ(0, checker.sameCharacter("", "BAA"));
+	EXPECT_EQ(0, checker.sameCharacter("A", ""));
+
+	EXPECT_EQ(0, checker.sameCharacter("a", "AA"));
+	EXPECT_EQ(0, checker.sameCharacter("a", "ab"));
+
+	EXPECT_EQ(40, checker.sameCharacter("AAAAAA", "AAAAAA"));
 }
